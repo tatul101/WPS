@@ -1,0 +1,19 @@
+<div *ngIf="!isDataAvailable">
+  <p style="font-size:48px;color:darkturquoise;margin: 25% 10% 0% 40%;"><b>Loading  </b>  <i class="fa fa-spinner fa-spin" style="font-size:48px;color:darkturquoise"></i> </p>
+</div>
+
+
+<div *ngIf="isDataAvailable && dataToShow">
+<h1 style="font-size:45px;margin: 5% 10% 5% 28%;"><u> The Returned Capability class Object</u>  </h1>
+<div *ngFor="let process of capabilities.processes">
+    <p style="margin: 0% 10% 0% 32%;"><b>Identifier :</b><i>  {{process.identifier}}</i></p>
+    <p style="margin: 0% 10% 0% 32%;"><b>JobControlOptions :</b><i>  {{process.jobControlOptions}}</i></p>
+    <p style="margin: 0% 10% 0% 32%;"><b>OutputTransmission :</b><i>  {{process.outputTransmission}}</i></p>
+    <hr>
+</div>
+
+</div>
+
+<div *ngIf="isDataAvailable && !dataToShow">
+<h1 style="font-size:48px;color:red;margin: 5% 10% 0% 30%;">Sorry No Data To show !!</h1>
+</div>
