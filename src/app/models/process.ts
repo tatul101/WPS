@@ -3,7 +3,7 @@ export class Process {
     jobControlOptions: string;
     outputTransmission: string;
   
-  constructor(public identifier_: string, public jobControlOptions_: string, public outputTransmission_: string){
+  constructor(identifier_: string,jobControlOptions_: string,outputTransmission_: string){
     this.identifier=identifier_;
     this.jobControlOptions=jobControlOptions_;
     this.outputTransmission=outputTransmission_;
