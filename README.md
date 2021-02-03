@@ -9,7 +9,6 @@ WpsDemoComponent has an method getCapabilities() to get the Capability object fr
 
 /**
  * getCapabilities via HTTP GET
- *
  * @callbackFunction is called with a parameter 'capabilities' after the WPSService was contacted. The parameter 'capabilities'  comprises a TypeScript Object representation of the WPSService response .
  */
 public  getCapabilities(){
@@ -23,7 +22,6 @@ WPSService implements a function the GetCapabilityService() that get a response 
 
 /**
  * getCapabilities via HTTP GET
- *
  * @callbackFunction is called with a parameter 'res' after the HttpGetResonse is received from the WPS server.
  */
 async getCapabilities() {
